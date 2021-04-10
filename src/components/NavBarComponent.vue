@@ -1,22 +1,10 @@
 <template>
   <div>
-    <b-navbar type="dark" variant="dark">
-      <b-navbar-nav>
-        <b-nav-item href="#">Home</b-nav-item>
-
-        <!-- Navbar dropdowns -->
-        <b-nav-item-dropdown text="Lang" right>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
-          <b-dropdown-item href="#">RU</b-dropdown-item>
-          <b-dropdown-item href="#">FA</b-dropdown-item>
-        </b-nav-item-dropdown>
-
-        <b-nav-item-dropdown text="User" right>
-          <b-dropdown-item href="#">Account</b-dropdown-item>
-          <b-dropdown-item href="#">Settings</b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
+    <b-navbar class="navbar" type="dark">
+      <div class="container">
+        <img class="logo" src="@/assets/logo.png" alt="ConstrUp">  
+        <span>Esse é um CRUD de materiais<br> de construção para <b class="orange">Constr Up!</b></span>
+      </div>       
     </b-navbar>
   </div>
 </template>
@@ -27,6 +15,22 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.navbar{
+  background-color: #f1f1f1;
+  padding: 30px 0;
 
+  span{
+    color: #000;
+    font-size: 25px;
+    font-weight: 800;
+    .orange{
+      color: #ff6100;
+    }
+  }
+  .logo{
+    width: 200px;
+    
+  }
+}
 </style>
