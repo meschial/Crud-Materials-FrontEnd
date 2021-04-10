@@ -4,7 +4,7 @@ const RESOURCE = 'materiais'
 
 const actions = {
     getMaterials({ commit }){
-        return apiPublic.get(`/${RESOURCE}` )
+        return apiPublic.get(`/${RESOURCE}`)
             .then(response => commit('SET_MATERIALS', response.data))
     },
 

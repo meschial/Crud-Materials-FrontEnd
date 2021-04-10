@@ -2,7 +2,9 @@
   <div>
     <b-navbar class="navbar" type="dark">
       <div class="container">
-        <img class="logo" src="@/assets/logo.png" alt="ConstrUp">  
+        <router-link to="/">
+          <img class="logo" src="@/assets/logo.png" alt="ConstrUp">  
+        </router-link>
         <span>Esse é um CRUD de materiais<br> de construção para <b class="orange">Constr Up!</b></span>
       </div>       
     </b-navbar>
@@ -20,17 +22,19 @@ export default {
   background-color: #f1f1f1;
   padding: 30px 0;
 
+  .logo{
+    width: 200px;
+    cursor: pointer;
+  }
+
   span{
     color: #000;
     font-size: 25px;
     font-weight: 800;
+    
     .orange{
       color: #ff6100;
     }
-  }
-  .logo{
-    width: 200px;
-    
   }
 }
 </style>

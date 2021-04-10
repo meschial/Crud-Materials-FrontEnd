@@ -7,11 +7,9 @@ import { BootstrapVue, BootstrapVueIcons} from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-Vue.component('pagination', require('laravel-vue-pagination'));
-
-Vue.use(VueToastify)
 Vue.use(BootstrapVue)
 Vue.use(BootstrapVueIcons)
+Vue.use(VueToastify)
 
 Vue.config.productionTip = false
 
